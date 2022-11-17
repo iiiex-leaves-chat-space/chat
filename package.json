@@ -1,0 +1,44 @@
+{
+  "name": "ichiyo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "generate:gh-pages": "BASE_DIR=/chat/ nuxt generate --gh-pages",
+    "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint": "yarn lint:js && yarn lint:prettier",
+    "lintfix": "prettier --write --list-different . && yarn lint:js --fix",
+    "deploy-setup": "git remote add deploy https://github.com/iiiex-leaves-chat-space/chat.git",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose --remote=deploy"
+  },
+  "dependencies": {
+    "core-js": "^3.25.3",
+    "firebase": "^9.12.1",
+    "moment": "^2.29.4",
+    "nuxt": "^2.15.8",
+    "sass": "^1.56.1",
+    "sass-loader": "10",
+    "vue": "^2.7.10",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@nuxt/types": "^2.15.8",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/eslint-config-typescript": "^11.0.0",
+    "@nuxtjs/eslint-module": "^3.1.0",
+    "@nuxtjs/google-fonts": "^3.0.0-0",
+    "@nuxtjs/vuetify": "^1.12.3",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-vue": "^9.5.1",
+    "prettier": "^2.7.1",
+    "push-dir": "^0.4.1"
+  }
+}
