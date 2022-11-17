@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{847:function(n,e,t){"use strict";t.r(e);var l=t(0).a.extend({name:"IndexPage"}),c=t(70),component=Object(c.a)(l,(function(){var n=this,e=n._self._c;n._self._setupProxy;return e("div",{staticClass:"chat"},[n._v("\n  a\n")])}),[],!1,null,null,null);e.default=component.exports}}]);
